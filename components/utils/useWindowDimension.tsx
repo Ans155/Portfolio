@@ -1,4 +1,3 @@
-"use client";
 import { useState, useEffect } from 'react';
 
 interface WindowDimensions {
@@ -6,24 +5,30 @@ interface WindowDimensions {
     height: number;
 }
 
-function getWindowDimensions(): WindowDimensions {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-        width,
-        height,
-    };
-}
-
 export default function useWindowDimensions(): WindowDimensions {
-    const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>(getWindowDimensions());
+    const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>({
+        width: 0,
+        height: 0,
+    });
 
     useEffect(() => {
+        function getWindowDimensions(): WindowDimensions {
+            return {
+                width: window.innerWidth,
+                height: window.innerHeight,
+            };
+        }
+
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
         }
 
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        if (typeof window !== 'undefined') {
+            setWindowDimensions(getWindowDimensions());
+            window.addEventListener('resize', handleResize);
+
+            return () => window.removeEventListener('resize', handleResize);
+        }
     }, []);
 
     return windowDimensions;

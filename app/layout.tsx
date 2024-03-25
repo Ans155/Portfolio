@@ -7,6 +7,8 @@ import About from "../components/About/About";
 import Experience from "../components/Experience/Experience";
 import Projects from "../components/Projects/Projects";
 import Achievements from "../components/Achievements/Achievements";
+import Skills from "../components/Skills/Skills";
+import Footer from "../components/Footer/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -28,6 +30,8 @@ export default function RootLayout({
         <Experience />
         <Projects />
         <Achievements />
+        <Skills />
+        <Footer />
         {children}</body>
     </html>
   );
