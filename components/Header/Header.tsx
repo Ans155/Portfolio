@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css'
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import Image from 'next/image';
 import CodeforcesIcon from '@mui/icons-material/Code';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
@@ -16,10 +16,10 @@ const Header: React.FC = () => {
                         <GitHubIcon style={{ fontSize: '3.4rem', marginRight:'0.4rem' }} />
                     </a>
                     <a href="https://leetcode.com/Ansh154/" target="_blank" rel="noopener noreferrer">
-                        <img src='/LeetCode.svg' alt="LeetCode" style={{ width: '3.4rem' , marginRight:'0.6rem' }} />
+                    <Image src='/LeetCode.svg' alt="LeetCode"  width={40} height={40} style={{ width: '3.4rem' , marginRight:'0.6rem' }} />
                     </a>
                     <a href="https://codeforces.com/profile/ansh_155" target="_blank" rel="noopener noreferrer">
-                        <img src='/code-forces.svg' alt="Codeforces" style={{ width: '3.4rem' , marginRight:'0.6rem' }} />
+                    <Image src='/code-forces.svg' alt="Codeforces" width={40} height={40} style={{ width: '3.4rem' , marginRight:'0.6rem' }} />
                     </a>
                     <a href="https://www.linkedin.com/in/ansh-choudhary-973106238/" target="_blank" rel="noopener noreferrer">
                         <LinkedInIcon style={{ fontSize: '3.4rem' }} />
