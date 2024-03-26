@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Experience: React.FC = () => {
   return (
     <div className='exp' id='exp'>
-      <h1>Experiences</h1>
+      <h1>Experience</h1>
       <div className='exp__content'>
         <div >
         <Image style={{width: "100px", height: "100px"}} src='/Stockgro.png' alt='Stockgro' width={100} height={100}/>

@@ -1,52 +1,48 @@
-.leadership {
+.achievements {
+    padding: 3rem 1rem;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .achievements > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Changed auto-fit to auto-fill */
+    gap: 2rem;
+  }
+  
+  .achievement-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 3rem 0rem;
-    background-color: #f5f5f5;
-}
-
-.leadership > h1 {
-    font-size: 3.5rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-}
-
-.leadership > div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.leadership > div > p {
-    flex: 0.5;
-    font-size: 1.3rem;
-    font-weight: 300;
-}
-
-.leadership > div > Carousel {
-    flex: 0.5;
-}
-
-/* Media queries for responsiveness */
-@media screen and (max-width: 768px) {
-    .leadership > div {
-        flex-direction: column;
-        align-items: center;
+  }
+  
+  .profile-image {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5%;
+    margin-bottom: 1rem;
+  }
+  
+  .achievement-item p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .achievements-grid {
+      grid-template-columns: repeat(2, 1fr);
     }
-    .leadership > h1 {
-        font-size: 2.5rem;
-        margin-bottom: 3rem;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .achievements-grid {
+      grid-template-columns: repeat(1, 1fr);
     }
-    .leadership > div > Carousel {
-        flex: 1;
-        margin-bottom: 2rem;
-    }
-    .leadership > div > p {
-        flex: 1; /* Take full width */
-        margin-bottom: 2rem; /* Add margin between paragraphs */
-        text-align: center; /* Center text */
-    }
-}
+  }
+  

@@ -5,20 +5,20 @@ import ProgressBar from './ProgressBar';
 
 const skills = [
   [
-    { name: "HTML", level: 90 },
+    { name: "Javascript", level:98 },
+    { name: "React", level: 98 },
+    { name: "HTML", level: 80 },
     { name: "CSS", level: 80 },
-    { name: "Javascript", level: 70 },
-    { name: "React", level: 60 },
-    { name: "Bootstrap", level: 80 },
+    { name: "Bootstrap", level: 90 },
     { name: "Material UI", level: 70 }
   ],
   [
-    { name: "Node.js", level: 80 },
-    { name: "Express.js", level: 70 },
-    { name: "MongoDB", level: 60 },
+    { name: "Node.js", level: 100 },
+    { name: "Express.js", level: 96 },
+    { name: "MongoDB", level: 100 },
+    { name: "C++", level: 100 },
     { name: "Python", level: 80 },
-    { name: "C++", level: 70 },
-    { name: "C", level: 60 }
+
   ]
 ];
 
