@@ -66,14 +66,14 @@ const Navbar: React.FC = () => {
                 </div>
                 <div className={clcont}>
                     <Link href='#project'>
-                        <span>Projects</span>
+                        <span style={{fontWeight: 400}}>Projects</span>
                     </Link>
-                    <a href='' rel="noreferrer" target='_blank' >Resume</a>
+                    <a href='https://drive.google.com/file/d/1yLBaL3ieNws4zlIUrPgtZRP4uAE42NkG/view?usp=drivesdk' rel="noreferrer" target='_blank' ><span style={{fontWeight: 400}}>Resume</span></a>
                     <Link href='#about'>
-                        <span>About</span>
+                    <span style={{fontWeight: 400}}>About</span>
                     </Link>
                     <Link href='#skills'>
-                        <span>Skills</span>
+                    <span style={{fontWeight: 400}}>Skills</span>
                     </Link>
                 </div>
             </div>

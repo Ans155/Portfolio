@@ -1,35 +1,65 @@
-.exp{
+.exp {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: center; */
-    gap : 2rem;
-    /* width : 100vw; */
-    margin : auto;
-    padding : 3rem 3rem 5rem 3rem;
+    gap: 2rem;
+    margin: auto;
+    padding: 3rem 1rem 5rem 1rem; /* Adjust padding for smaller screens */
     text-align: center;
 }
 
-.exp > h1{
-    font-size: 3.5rem;
-    font-weight: 100;
-    margin-bottom: 1.2rem;
+.exp > h1 {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+    font-weight: 500;
+    margin-bottom: 1rem; /* Reduce margin for smaller screens */
 }
 
-.exp__content{
+.exp__content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap : 5rem 15rem;
-    flex-wrap: wrap;
-    padding : 0rem 8rem;
+    flex-wrap: wrap; /* Allow items to wrap to next row */
+    justify-content: center; /* Center items horizontally */
+    gap: 2rem;
+    padding: 0 1rem; /* Adjust padding for smaller screens */
 }
 
-.exp__content > div > img{
-    width : 380px;
+.exp__content > div {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    flex: 1 1 calc(33.33% - 2rem); /* Adjust flex-basis for smaller screens */
+    max-width: 380px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.exp__content > div > img {
+    width: 80px; /* Adjust image size for smaller screens */
+    height: 80px;
+    margin: auto;
     margin-bottom: 1rem;
 }
 
 .exp__content > div > h3 {
-    font-weight : 100;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
+@media only screen and (max-width: 768px) {
+    .exp > h1 {
+        font-size: 2.5rem;
+    }
+    .exp__content > div {
+        flex: 1 1 calc(50% - 2rem); /* Adjust for two columns */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .exp > h1 {
+        font-size: 2rem;
+    }
+    .exp__content > div {
+        flex: 1 1 calc(100% - 2rem); /* Adjust for single column */
+    }
 }

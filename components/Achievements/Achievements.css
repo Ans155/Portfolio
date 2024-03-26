@@ -9,7 +9,7 @@
   
   .leadership > h1 {
       font-size: 3.5rem;
-      font-weight: 100;
+      font-weight: 500;
       margin-bottom: 3rem;
   }
   
@@ -23,7 +23,7 @@
   .leadership > div > p{
       flex : 0.5;
       font-size: 1.3rem;
-      font-weight: 100;
+      font-weight: 300;
   }
   
   .leadership> div > Carousel{

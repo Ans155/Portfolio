@@ -11,7 +11,7 @@ const About: React.FC = () => {
           <p>
             I am a Full Stack Developer with a Bachelor's of Technology in Electronics & Communication Engineering from IIIT, Jabalpur. I have a passion for learning and sharing my knowledge with others.
           </p>
-          <a href='' target='_blank' rel='noreferrer'>
+          <a href='https://drive.google.com/file/d/1yLBaL3ieNws4zlIUrPgtZRP4uAE42NkG/view?usp=drivesdk' target='_blank' rel='noreferrer'>
             Resume
           </a>
         </div>
