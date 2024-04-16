@@ -8,19 +8,19 @@ const Achievements: React.FC = () => {
       <h1>Achievements</h1>
       <div className="achievements-grid">
         <div className="achievement-item">
-          <Image src='/profile.jfif' alt="Profile" width={250} height={250} className="profile-image" />
+          <Image src='/LeetCode.svg' alt="Profile" width={250} height={250} className="profile-image" />
           <p>
             Ranked 35/22,000 in CodeChef Starters 90, 496/22,282 in LeetCode Biweekly 101, 906/16,000 in Codeforces Round 878.
           </p>
         </div>
         <div className="achievement-item">
-          <Image src='/profile.jfif' alt="Profile" width={250} height={250} className="profile-image" />
+          <Image src='/code-forces.svg' alt="Profile" width={250} height={250} className="profile-image" />
           <p>
             Solved 900+ DSA questions on various online coding platforms (LeetCode, CodeChef, GeeksForGeeks, Codeforces).
           </p>
         </div>
         <div className="achievement-item">
-          <Image src='/profile.jfif' alt="Profile" width={250} height={250} className="profile-image" />
+          <Image src='/knight.gif' alt="Profile" width={250} height={250} className="profile-image" unoptimized/>
           <p>
             Achieved Knight Badge on LeetCode with a rating of 1860+ and Specialist on Codeforces with a rating of 1410+.
           </p>

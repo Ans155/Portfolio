@@ -9,59 +9,54 @@ const Projects: React.FC = () => {
       <div className='project__content'>
         <div className='proj'>
           <div className='proj__name'>HospitalityHub</div>
-          <a href='' > <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>Clone Project</a>
-          <a href=''> <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>  Repo</a>
-          <h3>Languages: 
-            <div>Javascript 59.7%</div>
-            <div>CSS 34.2%</div>
-            <div>HTML 6.1%</div>
-          </h3>
-          <div className='proj__footer'>
-            <h3><GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/> Stars</h3>
-            <h3>Updated on October 27, 2021</h3>
+          <div className="links-column">
+            <a href='https://hospitalityhub.netlify.app/login'><GitHubIcon style={{ fontSize: "2rem", position: "relative", top: "0px" }}/> Live</a>
+            <a href='https://github.com/Ans155/HospitalityHub'><GitHubIcon style={{ fontSize: "2rem", position: "relative", top: "2px" }}/> Repo</a>
           </div>
+          <h3>Tech Stack: 
+            <div>React</div>
+            <div>Node</div>
+            <div>MongoDB</div>
+            <div>ExpressJs</div>
+          </h3>
         </div>
         <div className='proj'>
           <div className='proj__name'>StockBot</div>
-          <a href=''> <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>Clone Project</a>
-          <a href=''> <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>  Repo</a>
-          <h3>Languages: 
-            <div>Javascript 97.5%</div>
-            <div>CSS 0.5%</div>
-            <div>HTML 2.0%</div>
+          <a href='https://github.com/Ans155/StockBot'> <GitHubIcon style={{ fontSize: "2rem", position:"relative", top:"2px"}}/>Repo</a>
+
+          <h3>Tech Stack: 
+            <div>React</div>
+            <div>FastAPI</div>
+            <div>NLP</div>
+            <div>Langchain</div>
+            <div>LLAMA-2 LLM</div>
           </h3>
-          <div className='proj__footer'>
-            <h3><GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/> Stars</h3>
-            <h3>Updated on October 27, 2021</h3>
-          </div>
         </div>
         <div className='proj'>
           <div className='proj__name'>admin_Dashboard</div>
-          <a href=''> <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>Clone Project</a>
-          <a href=''> <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>  Repo</a>
-          <h3>Languages: 
-            <div>Javascript 75.0%</div>
-            <div>CSS 18.9%</div>
-            <div>HTML 6.1%</div>
-          </h3>
-          <div className='proj__footer'>
-            <h3><GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/> Stars</h3>
-            <h3>Updated on October 27, 2021</h3>
+          <div className="links-column">
+            <a href='https://admin-market-frontend.onrender.com/dashboard'><GitHubIcon style={{ fontSize: "2rem", position: "relative", top: "0px" }}/> Live</a>
+            <a href='https://github.com/Ans155/admin_Dashboard'><GitHubIcon style={{ fontSize: "2rem", position: "relative", top: "2px" }}/> Repo</a>
           </div>
+          
+          <h3>Tech Stack: 
+          <div>React</div>
+            <div>Node</div>
+            <div>MongoDB</div>
+            <div>ExpressJs</div>
+          </h3>
+
         </div>
         <div className='proj'>
           <div className='proj__name'>chat_dapp</div>
-          <a href='#'> <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>Clone Project</a>
-          <a href='#'> <GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/>  Repo</a>
-          <h3>Languages: 
-            <div>Javascript 77.2%</div>
-            <div>CSS 20.8%</div>
-            <div>HTML 1.1%</div>
+          <a href='https://github.com/Ans155/chat_dapp'> <GitHubIcon style={{ fontSize: "2rem", position:"relative", top:"2px"}}/>  Repo</a>
+          <h3>Tech Stack: 
+            <div>NextJs</div>
+            <div>Web3Js</div>
+            <div>Hardhat</div>
+            <div>Metamask</div>
           </h3>
-          <div className='proj__footer'>
-            <h3><GitHubIcon style={{ fontSize: "1rem", position:"relative", top:"2px"}}/> Stars</h3>
-            <h3>Updated on October 27, 2021</h3>
-          </div>
+
         </div>
       </div>
     </div>

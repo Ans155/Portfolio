@@ -9,7 +9,7 @@
   }
   
   .project > h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 500;
     margin-bottom: 1rem;
   }
@@ -34,11 +34,31 @@
   }
   
   .proj__name {
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     font-weight: 500;
     margin-bottom: 0.5rem;
+    
+  }
+  .links-column {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
   }
   
+  .links-column a {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+    border-radius: 5px;
+    padding: 0.15rem;
+  }
+  .proj img {
+    width: 100%; /* Make the thumbnail width 100% of its container */
+    height: 33.33%; /* Make the thumbnail one-third of the container's height */
+    object-fit: cover; /* Ensure the image covers the entire space */
+    margin-top: 1rem;
+  }
   .proj > a {
     text-decoration: none;
     font-size: 0.9rem;
@@ -46,11 +66,12 @@
     border: 1px solid #6c757d;
     border-radius: 5px;
     padding: 0.5rem;
+    flex-direction: column;
   }
   
   .proj > h3 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: wrap;
     align-items: center;
     font-weight: 400;
     gap: 0.5rem;
@@ -62,6 +83,7 @@
     background-color: #e6e6e6;
     padding: 2px 5px;
     border-radius: 5px;
+    text-align: center;
   }
   
   .proj__footer {
@@ -77,10 +99,10 @@
     font-size: 0.9rem;
   }
   
-  /* Media queries for responsiveness */
+
   @media screen and (max-width: 767px) {
     .proj {
-      width: calc(100% - 2rem); /* One project per row for smaller screens */
+      width: calc(100% - 2rem); 
     }
   }
   
