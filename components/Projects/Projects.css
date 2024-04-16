@@ -1,108 +1,115 @@
 .project {
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-    gap: 1rem;
-    width: 100%;
-    background-color: #f8f9fa;
-    text-align: center;
-  }
-  
-  .project > h1 {
-    font-size: 4rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-  
-  .project__content {
-    display: flex;
-    flex-wrap: wrap; /* Allow projects to wrap to the next line */
-    justify-content: center; /* Center projects horizontally */
-    gap: 2rem;
-  }
-  
-  .proj {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    width: calc(50% - 1rem); /* Two projects in one row for bigger screens */
-    max-width: 450px; /* Limit maximum width */
-    padding: 1.5rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  }
-  
-  .proj__name {
-    font-size: 1.9rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-    
-  }
-  .links-column {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-  }
-  
-  .links-column a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: #6c757d;
-    border: 1px solid #6c757d;
-    border-radius: 5px;
-    padding: 0.15rem;
-  }
-  .proj img {
-    width: 100%; /* Make the thumbnail width 100% of its container */
-    height: 33.33%; /* Make the thumbnail one-third of the container's height */
-    object-fit: cover; /* Ensure the image covers the entire space */
-    margin-top: 1rem;
-  }
-  .proj > a {
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: #6c757d;
-    border: 1px solid #6c757d;
-    border-radius: 5px;
-    padding: 0.5rem;
-    flex-direction: column;
-  }
-  
-  .proj > h3 {
-    display: flex;
-    flex-direction: wrap;
-    align-items: center;
-    font-weight: 400;
-    gap: 0.5rem;
-  }
-  
-  .proj > h3 > div {
-    font-size: 0.8rem;
-    font-weight: 500;
-    background-color: #e6e6e6;
-    padding: 2px 5px;
-    border-radius: 5px;
-    text-align: center;
-  }
-  
-  .proj__footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    width: 100%;
-  }
-  
-  .proj__footer > h3 {
-    font-weight: 400;
-    font-size: 0.9rem;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  gap: 1rem;
+  width: 100%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
 
-  @media screen and (max-width: 767px) {
-    .proj {
-      width: calc(100% - 2rem); 
-    }
+.project > h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.project__content {
+  display: grid; /* Change from flex to grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust column width */
+  gap: 2rem;
+}
+
+.proj {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  max-width: 450px; /* Limit maximum width */
+  width: 100%; /* Set width to 100% */
+}
+
+.proj__name {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.links-column {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.links-column a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  padding: 0.15rem;
+}
+
+.proj img {
+  width: 100%; /* Make the thumbnail width 100% of its container */
+  height: auto; /* Reset height to auto */
+  object-fit: cover; /* Ensure the image covers the entire space */
+  margin-top: 1rem;
+}
+
+.proj > a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  padding: 0.5rem;
+  flex-direction: column;
+}
+
+.proj > h3 {
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  font-weight: 400;
+  gap: 0.5rem;
+}
+
+.proj > h3 > div {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #e6e6e6;
+  padding: 2px 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.proj__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.proj__footer > h3 {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 767px) {
+  .proj {
+    width: calc(100% - 2rem);
   }
-  
+  .proj > h3 {
+    flex-wrap: wrap; /* Allow the content to wrap */
+    justify-content: center; /* Center the content horizontally */
+  }
+
+  .proj > h3 > div {
+    margin-bottom: 0.5rem; /* Add spacing between the divs */
+  }
+}

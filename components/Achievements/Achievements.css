@@ -44,5 +44,9 @@
     .achievements-grid {
       grid-template-columns: repeat(1, 1fr);
     }
+    .achievements > h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
   }
   
