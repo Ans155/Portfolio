@@ -12,7 +12,7 @@ const About: React.FC = () => {
         <p>
           I am a Full Stack Developer with a Bachelor&apos;s of Technology in Electronics & Communication Engineering from IIIT, Jabalpur. I have a passion for learning and sharing my knowledge with others.
         </p>
-        <a href='https://drive.google.com/file/d/1yLBaL3ieNws4zlIUrPgtZRP4uAE42NkG/view?usp=drivesdk' target='_blank' rel='noreferrer'>
+        <a href='https://drive.google.com/file/d/1FrY6pELA42yPNs0ft_gPlxH43BAGESRW/view?usp=sharing' target='_blank' rel='noreferrer'>
           Resume
         </a>
       </div>

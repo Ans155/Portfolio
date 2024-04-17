@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
                     <Link href='#project'>
                         <span style={{fontWeight: 400}}>Projects</span>
                     </Link>
-                    <a href='https://drive.google.com/file/d/1yLBaL3ieNws4zlIUrPgtZRP4uAE42NkG/view?usp=drivesdk' rel="noreferrer" target='_blank' ><span style={{fontWeight: 400}}>Resume</span></a>
+                    <a href='https://drive.google.com/file/d/1FrY6pELA42yPNs0ft_gPlxH43BAGESRW/view?usp=sharing' rel="noreferrer" target='_blank' ><span style={{fontWeight: 400}}>Resume</span></a>
                     <Link href='#about'>
                     <span style={{fontWeight: 400}}>About</span>
                     </Link>
